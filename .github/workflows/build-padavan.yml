@@ -136,7 +136,9 @@ jobs:
         # sed -i '/自定义项/d' configs/templates/$TNAME.config
         # echo "自定义项=y" >> configs/templates/$TNAME.config
         
-        #sed -i '/CONFIG_FIRMWARE_INCLUDE_FTPD/d' configs/templates/$TNAME.config         #测试样例
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_ALIDDNS/d' configs/templates/$TNAME.config         #测试样例
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_V2RAY/d' configs/templates/$TNAME.config 
+        #sed -i '/CONFIG_FIRMWARE_INCLUDE_V2RAY/d' configs/templates/$TNAME.config
         #echo "CONFIG_FIRMWARE_INCLUDE_FTPD=n" >> configs/templates/$TNAME.config         #测试样例
         
         #########################################################################################
